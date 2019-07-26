@@ -1,0 +1,43 @@
+.travelers-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.travelers-list__item {
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+.trvelers-list__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bolder;
+  color: #1d2e5d;
+}
+
+.travelers-list__interests {
+  list-style: none;
+}
+
+.travelers-list__interests-item {
+  display: inline;
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.travelers-list__wish-list {
+  list-style: none;
+}
+
+.travelers-list__wish-item {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}

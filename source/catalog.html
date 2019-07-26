@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <strong class="page-header__logo logo"><a>Погнали?</a></strong>
+    <header class="page-header wrapper">
+      <a class="page-header__logo logo"><img src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали"></a>
+      <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="#">О сервисе</a>
@@ -16,13 +17,13 @@
           <li class="site-list__item">
             <a href="#">Направления</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item">
             <a href="#">Попутчики</a>
           </li>
         </ul>
         <ul class="main-nav__user-list user-list">
           <li class="user-list__item">
-            <a href="#">Авторизация</a>
+            <a href="#" class="button">Авторизация</a>
           </li>
         </ul>
         <ul class="main-nav__contacts contacts-list">
@@ -47,11 +48,11 @@
       </nav>
     </header>
     <main class="catalog-content">
-      <section class="travelers">
+      <section class="travelers travelers--catal wrapper">
         <ul class="travelers__list travelers-list">
           <li class="travelers-list__item">
-            <img>
-            <h3>Таня Фирсова</h3>
+            <img src="img/firsova-mobile@1x.jpg">
+            <h3 class="trvelers-list__name">Таня Фирсова</h3>
             <span>1,5М</span>
             <ul class="travelers-list__interests">
               <li class="travelers-list__interests-item"><a href="#">#ЗОЖ</a></li>
@@ -75,11 +76,11 @@
               <li class="transport-list__item">Пеший</li>
             </ul>
             <span>левел:</span>
-            <a href="#">Позвать!</a>
+            <a href="#" class="button">Позвать!</a>
           </li>
           <li class="travelers-list__item">
-            <img>
-            <h3>Петя Демин</h3>
+            <img src="img/demin-mobile@1x.jpg">
+            <h3 class="trvelers-list__name">Петя Демин</h3>
             <span>150</span>
             <ul class="travelers-list__interests">
               <li class="travelers-list__interests-item"><a href="#">#бургер</a></li>
@@ -101,11 +102,11 @@
               <li class="transport-list__item transport-list__item--active">Пеший</li>
             </ul>
             <span>левел:</span>
-            <a href="#">Позвать!</a>
+            <a href="#" class="button">Позвать!</a>
           </li>
           <li class="travelers-list__item">
-            <img>
-            <h3>Марк Смолов</h3>
+            <img src="img/smolov-mobile@1x.jpg">
+            <h3 class="trvelers-list__name">Марк Смолов</h3>
             <span>1700</span>
             <ul class="travelers-list__interests">
               <li class="travelers-list__interests-item"><a href="#">#рэп</a></li>
@@ -128,11 +129,11 @@
               <li class="transport-list__item">Пеший</li>
             </ul>
             <span>левел:</span>
-            <a href="#">Позвать!</a>
+            <a href="#" class="button">Позвать!</a>
           </li>
           <li class="travelers-list__item">
-            <img>
-            <h3>Лариса Роговая</h3>
+            <img src="img/rogovaya-mobile@1x.jpg">
+            <h3 class="trvelers-list__name">Лариса Роговая</h3>
             <span>23</span>
             <ul class="travelers-list__interests">
               <li class="travelers-list__interests-item"><a href="#">#образование</a></li>
@@ -153,7 +154,7 @@
               <li class="transport-list__item">Пеший</li>
             </ul>
             <span>левел:</span>
-            <a href="#">Позвать!</a>
+            <a href="#" class="button">Позвать!</a>
           </li>
         </ul>
         <button type="button">Показать еще</button>
@@ -163,23 +164,23 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
-        <strong class="page-footer__logo logo"></strong>
-        <ul class="page-footer__social social-list">
-            <li class="social-list__item">
-              <a href="#">FaceBook</a>
-            </li>
-            <li class="social-list__item">
-              <a href="#">VKontakte</a>
-            </li>
-            <li class="social-list__item">
-              <a href="#">Instagram</a>
-            </li>
-        </ul>
-        <div class="developper">
-          <span>Разработано</span>
-          <a>htmlacademy</a>
-        </div>
-      </footer>
-    </body>
-  </html>
+    <footer class="page-footer wrapper">
+      <img src="img/logo-mobile-blue@1x.png" class="page-footer__logo logo">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a href="#">FaceBook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#">VKontakte</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+      <div class="developper">
+        <span>Разработано</span>
+        <a>htmlacademy</a>
+      </div>
+    </footer>
+  </body>
+</html>

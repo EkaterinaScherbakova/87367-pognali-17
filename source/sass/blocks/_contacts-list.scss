@@ -1,0 +1,16 @@
+.contacts-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts-list__item {
+  font-weight: bolder;
+  text-transform: uppercase;
+  & a {
+    color: inherit;
+
+    text-decoration: none;
+  }
+}
