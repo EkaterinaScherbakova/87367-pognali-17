@@ -1,5 +1,7 @@
 .review {
-  background-color: #0E1532;
+  @include wrapper;
+
+  background-color: #0e1532;
 }
 
 .review__content {

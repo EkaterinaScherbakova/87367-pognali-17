@@ -1,5 +1,7 @@
 .what-to-do {
-  background-color: #121B42;
+  @include wrapper;
+
+  background-color: #121b42;
   list-style-type: none;
 }
 
@@ -8,5 +10,5 @@
   line-height: 18px;
   color: #161c35;
 
-  background-color: #FFA72C;
+  background-color: #ffa72c;
 }

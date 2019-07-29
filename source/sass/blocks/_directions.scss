@@ -1,3 +1,7 @@
+.directions {
+  @include wrapper;
+}
+
 .directions__list {
   list-style: none;
 }

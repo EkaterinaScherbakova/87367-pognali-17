@@ -11,7 +11,7 @@
   background-color: #ffffff;
 }
 
-.trvelers-list__name {
+.travelers-list__name {
   font-size: 21px;
   line-height: 21px;
   font-weight: bolder;
@@ -24,7 +24,8 @@
 
 .travelers-list__interests-item {
   display: inline;
-  & a {
+
+  a {
     color: inherit;
     text-decoration: none;
   }

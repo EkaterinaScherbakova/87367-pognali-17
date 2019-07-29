@@ -1,7 +1,8 @@
 .about-us {
+  @include wrapper;
+
   color: #ffffff;
 
   background-color: #273052;
-  background-image: url(/img/about-mobile@1x.png);
+  background-image: url("/img/about-mobile@1x.png");
 }
-

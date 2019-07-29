@@ -1,7 +1,7 @@
-@import "./normalize";
-@import "./fonts";
+@import "./base/mixins";
+@import "./base/normalize";
+@import "./base/fonts";
 @import "./blocks/button";
-@import "./blocks/wrapper";
 @import "./blocks/title";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
@@ -14,16 +14,18 @@
 @import "./blocks/directions";
 @import "./blocks/travelers";
 @import "./blocks/travelers-list";
+@import "./blocks/tariffs";
 @import "./blocks/tariff-list";
 @import "./blocks/sign-up";
+@import "./blocks/address";
 @import "./blocks/page-footer";
 
 
 body {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
 
-  background-color: #EEF0F6;
+  background-color: #eef0f6;
 }

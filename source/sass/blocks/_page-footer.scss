@@ -1,3 +1,5 @@
 .page-footer {
+  @include wrapper;
+
   background-color: #ffffff;
 }

@@ -1,9 +1,12 @@
-.travelers{
+.travelers {
+  @include wrapper;
+
   color: #ffffff;
 
-  background-color: #121B42;
+  background-color: #121b42;
   background-image: url("/img");
+
   &--catal {
-    background-color: #EEF0F6;
+    background-color: #eef0f6;
   }
 }
