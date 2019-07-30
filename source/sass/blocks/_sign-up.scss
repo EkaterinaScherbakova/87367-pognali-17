@@ -1,0 +1,15 @@
+.sign-up {
+  @include wrapper;
+
+  color: #ffffff;
+
+  background-color: #192144;
+}
+
+.sign-up__promo {
+  text-align: center;
+}
+
+.sign-up__autorisation {
+  color: #ffd74b;
+}

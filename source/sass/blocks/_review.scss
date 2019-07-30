@@ -1,0 +1,16 @@
+.review {
+  @include wrapper;
+
+  background-color: #0e1532;
+}
+
+.review__content {
+  margin: 0;
+
+  color: #ffffff;
+}
+
+.review__author {
+  font-weight: bolder;
+  font-style: normal;
+}

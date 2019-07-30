@@ -1,0 +1,14 @@
+.what-to-do {
+  @include wrapper;
+
+  background-color: #121b42;
+  list-style-type: none;
+}
+
+.what-to-do__item {
+  font-size: 18px;
+  line-height: 18px;
+  color: #161c35;
+
+  background-color: #ffa72c;
+}
