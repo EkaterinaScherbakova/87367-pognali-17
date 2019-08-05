@@ -1,3 +1,15 @@
 @mixin wrapper {
   padding: 27px 25px;
 }
+
+@mixin tablet {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
