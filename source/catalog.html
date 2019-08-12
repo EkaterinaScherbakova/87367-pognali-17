@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="page-header wrapper">
-      <a class="page-header__logo logo"><img src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали"></a>
-      <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Направления</a>
-          </li>
-          <li class="site-list__item site-list__item">
-            <a href="#">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list user-list">
-          <li class="user-list__item">
-            <a href="#" class="button">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="main-nav__contacts contacts-list">
-          <li class="contacts-list__item">
-            <a href="tel:+78005558628">8 800 555-86-28</a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="main-nav__social social-list">
-          <li class="social-list__item">
-            <a href="#">FaceBook</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#">VKontakte</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#">Instagram</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="catalog-content">
-      <section class="travelers travelers--catal wrapper">
-        <ul class="travelers__list travelers-list">
-          <li class="travelers-list__item">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo logo">
+      <img srcset="./img/logo-mobile-white@1x.png 100w,
+                    ./img/logo-tablet-white@1x.png 166w,
+                    ./img/logo-desktop-white@1x.png 200w"
+        sizes="(max-width: 767px) 100px,
+                (max-width: 1199px) 166px,
+                200px"
+        src="./img/logo-tablet-white@1x.png" width="100" height="19" alt="Погнали">
+    </a>
+    <button type="button" class="page-header__nav-toggle" aria-label="Открыть меню"></button>
+    <nav class="page-header__main-nav main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="page-header__user-nav page-header__user-nav--hidden user-nav">
+      <li>
+        <a href="tel:+78005558628" class="user-nav__item user-nav__item--tel">8 800 555-86-28</a>
+      </li>
+      <li>
+        <a href="mailto:mail@htmlacademy.ru" class="user-nav__item user-nav__item--mail">mail@htmlacademy.ru</a>
+      </li>
+      <li>
+        <a href="#" class="user-nav__item">Авторизация</a>
+      </li>
+    </ul>
+    <ul class="page-header__social social-list">
+      <li class="social-list__item">
+        <a href="#">FaceBook</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">VKontakte</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">Instagram</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div class="headline">
+      <h1 class="headline__title">Попутчики</h1>
+      <a class="headline__actions">На главную</a>
+    </div>
+    <div class="catalog-content">
+      <section class="filter">
+
+      </section>
+      <section class="travelers-catal">
+        <ul class="travelers-list travelers-catal-list">
+          <li class="travelers-list__item travelers-catal-list__item">
             <img src="img/firsova-mobile@1x.jpg">
             <h3 class="trvelers-list__name">Таня Фирсова</h3>
             <span>1,5М</span>
@@ -78,7 +95,7 @@
             <span>левел:</span>
             <a href="#" class="button">Позвать!</a>
           </li>
-          <li class="travelers-list__item">
+          <li class="travelers-list__item travelers-catal-list__item">
             <img src="img/demin-mobile@1x.jpg">
             <h3 class="trvelers-list__name">Петя Демин</h3>
             <span>150</span>
@@ -104,7 +121,7 @@
             <span>левел:</span>
             <a href="#" class="button">Позвать!</a>
           </li>
-          <li class="travelers-list__item">
+          <li class="travelers-list__item travelers-catal-list__item">
             <img src="img/smolov-mobile@1x.jpg">
             <h3 class="trvelers-list__name">Марк Смолов</h3>
             <span>1700</span>
@@ -131,7 +148,7 @@
             <span>левел:</span>
             <a href="#" class="button">Позвать!</a>
           </li>
-          <li class="travelers-list__item">
+          <li class="travelers-list__item travelers-catal-list__item">
             <img src="img/rogovaya-mobile@1x.jpg">
             <h3 class="trvelers-list__name">Лариса Роговая</h3>
             <span>23</span>
@@ -157,30 +174,42 @@
             <a href="#" class="button">Позвать!</a>
           </li>
         </ul>
-        <button type="button">Показать еще</button>
-        <ul class="travelers__paginator">
-          <li><a href="#">Назад</a></li>
-          <li><a href="#">Вперед</a></li>
-        </ul>
+        <button type="button" class="travelers-catal__show-more">Показать еще</button>
+        <div class="travelers-catal__pagination">
+          <ul class="travelers-catal__numbers">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+          </ul>
+          <ul class="travelers-catal__pre-next">
+            <li><a href="#">Назад</a></li>
+            <li><a href="#">Вперед</a></li>
+          </ul>
+        </div>
       </section>
-    </main>
-    <footer class="page-footer wrapper">
-      <img src="img/logo-mobile-blue@1x.png" class="page-footer__logo logo">
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a href="#">FaceBook</a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">VKontakte</a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <div class="developper">
-        <span>Разработано</span>
-        <a>htmlacademy</a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a href="index.html" class="page-footer__logo logo">
+      <img src="img/logo-mobile-blue@1x.png">
+    </a>
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item">
+        <a href="#">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">Вконтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">Instagram</a>
+      </li>
+    </ul>
+    <div class="page-footer__developper">
+      <span>Разработано</span>
+      <a>htmlacademy</a>
+    </div>
+  </footer>
+</body>
+
 </html>

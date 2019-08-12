@@ -1,0 +1,32 @@
+.travelers-catal__show-more {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bolder;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background: none;
+  border: none;
+}
+
+.travelers-catal__pagination {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+}
+
+.travelers-catal__numbers,
+.travelers-catal__pre-next {
+  display: flex;
+
+  list-style: none;
+}
+
+.travelers-catal__numbers {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}

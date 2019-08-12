@@ -1,4 +1,6 @@
 .what-to-do {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -8,11 +10,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: -138px;
+    bottom: 110px;
   }
 
   @include desktop {
-    margin-top: -250px;
+    bottom: 210px;
   }
 }
 

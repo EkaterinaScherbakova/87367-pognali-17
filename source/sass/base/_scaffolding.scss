@@ -9,6 +9,11 @@ body {
   color: #444444;
 
   background-color: #eef0f6;
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 html {

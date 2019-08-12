@@ -1,12 +1,28 @@
 .travelers {
   @include wrapper;
 
+  position: relative;
+
   color: #ffffff;
 
   background-color: #121b42;
   background-image: url("/img");
 
+  @include desktop {
+    display: flex;
+  }
+
   &--catal {
+    display: block;
+
     background-color: #eef0f6;
+  }
+
+  .button {
+    @include desktop {
+      position: absolute;
+      left: 131px;
+      bottom: 134px;
+    }
   }
 }

@@ -1,5 +1,14 @@
 .what-to-do-section {
   @include wrapper;
 
-  background-color: #121b42;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include tablet {
+    height: 111px;
+  }
+
+  @include desktop {
+    height: 0;
+  }
 }

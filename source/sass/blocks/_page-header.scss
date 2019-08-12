@@ -11,11 +11,34 @@
   background-color: #0e1533;
 
   @include tablet {
-    background-color: #121B42;
+    background-color: #121b42;
   }
 
   @include desktop {
     background-color: #0e1533;
+  }
+
+  &--opened {
+    flex-direction: column;
+    height: 100vh;
+
+    color: #192144;
+
+    background-color: #ffffff;
+
+    .page-header__main-nav {
+      display: block;
+    }
+
+    .page-header__nav-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .page-header__user-nav {
+      position: initial;
+    }
   }
 }
 
@@ -52,6 +75,18 @@
   &::after {
     bottom: 0;
   }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.page-header__main-nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .page-header__user-nav {
@@ -65,4 +100,16 @@
   @include tablet {
     position: initial;
   }
+
+  &--hidden {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.page-header__social {
+  display: none;
 }
