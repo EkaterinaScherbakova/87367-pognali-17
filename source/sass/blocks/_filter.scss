@@ -1,0 +1,15 @@
+.filter {
+  width: 100%;
+  height: 624px;
+
+  background-color: #ffd74b;
+
+  @include tablet {
+    height: 555px;
+  }
+
+  @include desktop {
+    width: 285px;
+    height: 815px;
+  }
+}

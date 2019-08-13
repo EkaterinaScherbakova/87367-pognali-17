@@ -1,14 +1,91 @@
 .what-to-do {
-  @include wrapper;
+  position: relative;
 
-  background-color: #121b42;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+
+    bottom: 110px;
+  }
+
+  @include desktop {
+    bottom: 210px;
+  }
 }
 
 .what-to-do__item {
+  padding: 23px 157px 22px 25px;
+
   font-size: 18px;
   line-height: 18px;
+  font-weight: bolder;
   color: #161c35;
 
-  background-color: #ffa72c;
+  background-color: #ff8d30;
+
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 15px 0 #ff8d30;
+
+  &:nth-child(2) {
+    background-color: #ffa72c;
+    box-shadow: 0 15px 0 #ffa72c;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbe2c;
+    box-shadow: 0 15px 0 #ffbe2c;
+  }
+
+  &:nth-child(4) {
+    background-color: #ffd84a;
+
+    border-radius: 15px;
+    box-shadow: none;
+  }
+
+  @include tablet {
+    width: 50%;
+
+    padding: 31px 31px 62px;
+
+    &:nth-child(1) {
+      border-radius: 15px 0 0 0;
+      box-shadow: 15px 0 0 #ff8d30;
+    }
+
+    &:nth-child(2) {
+      border-radius: 15px 15px 0 0;
+      box-shadow: none;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 0 0 15px;
+      box-shadow: 15px 0 0 #ffbe2c;
+    }
+
+    &:nth-child(4) {
+      border-radius: 0 0 15px 15px;
+    }
+  }
+
+  @include desktop {
+    width: 25%;
+
+    &:nth-child(n) {
+      border-radius: 15px 0 0 15px;
+    }
+
+    &:nth-child(2) {
+      box-shadow: 15px 0 0 #ffa72c;
+    }
+
+    &:nth-child(4) {
+      border-radius: 15px;
+    }
+  }
 }

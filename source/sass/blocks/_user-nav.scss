@@ -1,0 +1,73 @@
+.user-nav {
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-nav__item {
+  position: relative;
+
+  display: inline-block;
+  padding: 2px 40px 0;
+
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161c35;
+
+  background-color: #ffd74b;
+  border-radius: 20px;
+
+  &--tel,
+  &--mail {
+    width: 40px;
+    padding: 0;
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+
+      display: block;
+
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &--tel {
+    background-color: #ff8d30;
+
+    &::before {
+      background-image: url("/img/topmenu-phone.svg");
+      background-size: 18px 18px;
+    }
+  }
+
+  &--mail {
+    background-color: #ffbd30;
+
+    &::before {
+      background-image: url("/img/topmenu-mail.svg");
+      background-size: 18px 14px;
+    }
+  }
+}

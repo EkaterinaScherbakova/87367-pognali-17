@@ -1,7 +1,115 @@
 .page-header {
   @include wrapper;
 
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
   color: #ffffff;
 
   background-color: #0e1533;
+
+  @include tablet {
+    background-color: #121b42;
+  }
+
+  @include desktop {
+    background-color: #0e1533;
+  }
+
+  &--opened {
+    flex-direction: column;
+    height: 100vh;
+
+    color: #192144;
+
+    background-color: #ffffff;
+
+    .page-header__main-nav {
+      display: block;
+    }
+
+    .page-header__nav-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .page-header__user-nav {
+      position: initial;
+    }
+  }
+}
+
+.page-header__nav-toggle {
+  position: relative;
+
+  width: 25px;
+  height: 11px;
+
+  background-color: inherit;
+
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 3px;
+
+    background-color: #ffffff;
+
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.page-header__main-nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.page-header__user-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -420px;
+
+  justify-content: center;
+
+  @include tablet {
+    position: initial;
+  }
+
+  &--hidden {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.page-header__social {
+  display: none;
 }

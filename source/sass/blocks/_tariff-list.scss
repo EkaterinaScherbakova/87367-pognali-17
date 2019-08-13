@@ -1,5 +1,25 @@
 .tariff-list {
-  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tariff-list__conditions {
+  border-top: 1px solid #e2e4ea;
+  border-bottom: 1px solid #e2e4ea;
+}
+
+.tariff-list__price {
+  text-align: right;
+}
+
+.tariff-list__service,
+.tariff-list__price {
+  display: block;
+
+  @include tablet {
+    display: table-cell;
+  }
 }
 
 .tariff-list__business {

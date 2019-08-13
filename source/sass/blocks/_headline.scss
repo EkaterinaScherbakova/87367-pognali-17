@@ -1,0 +1,32 @@
+.headline {
+  @include wrapper;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #161c35;
+}
+
+.headline__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.headline__actions {
+  display: none;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  @include tablet {
+    display: block;
+  }
+}

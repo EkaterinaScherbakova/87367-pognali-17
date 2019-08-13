@@ -1,0 +1,9 @@
+.travelers-catal-list {
+  display: block;
+}
+
+.travelers-catal-list__item {
+  @include tablet {
+    width: 688px;
+  }
+}

@@ -1,14 +1,15 @@
 @import "./base/mixins";
 @import "./base/normalize";
 @import "./base/fonts";
+@import "./base/scaffolding";
 @import "./blocks/button";
 @import "./blocks/title";
+@import "./blocks/social-list";
+@import "./blocks/user-nav";
 @import "./blocks/page-header";
-@import "./blocks/main-nav";
 @import "./blocks/site-list";
-@import "./blocks/contacts-list";
 @import "./blocks/intro";
-@import "./blocks/review";
+@import "./blocks/what-to-do-section";
 @import "./blocks/what-to-do";
 @import "./blocks/about-us";
 @import "./blocks/directions";
@@ -19,13 +20,8 @@
 @import "./blocks/sign-up";
 @import "./blocks/address";
 @import "./blocks/page-footer";
-
-
-body {
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #444444;
-
-  background-color: #eef0f6;
-}
+@import "./blocks/headline";
+@import "./blocks/catalog-content";
+@import "./blocks/travelers-catal";
+@import "./blocks/travelers-catal-list";
+@import "./blocks/filter";

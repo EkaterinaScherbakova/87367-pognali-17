@@ -1,12 +1,73 @@
 .directions {
   @include wrapper;
+
+  position: relative;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+
+    & .button {
+      position: absolute;
+      right: 300px;
+      bottom: 150px;
+    }
+  }
 }
 
 .directions__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.directions__photo {
+  display: block;
+  width: 100%;
+
+  border-radius: 15px 15px 0 0;
+
+  @include tablet {
+    width: 184px;
+
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+.directions__item {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @include tablet {
+    width: 616px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.directions__desc {
+  position: relative;
+
+  width: 100%;
+
+  padding: 28px 25px 23px;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+  box-shadow: 0 -15px 0 0 #ffffff;
+
+  @include tablet {
+    border-radius: 15px 0 0 15px;
+    box-shadow: none;
+  }
+}
+
 .directions__country {
+  margin: 0;
+
   font-size: 21px;
   line-height: 21px;
   color: #161c35;
