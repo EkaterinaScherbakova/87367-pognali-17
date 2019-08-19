@@ -1,12 +1,26 @@
 .button {
-  display: inline-block;
+  position: relative;
+
+  display: block;
+  padding: 24px;
 
   font-size: 17px;
-  line-height: 30px;
+  line-height: 17px;
   font-weight: bolder;
   color: #1d2e5b;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: #ffd74b;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 26px;
+
+    border: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
 }

@@ -7,3 +7,18 @@
     width: 688px;
   }
 }
+
+.travelers-catal-list__photo {
+  width: 70px;
+  height: 70px;
+
+  @include tablet {
+    width: 190px;
+    height: 190px;
+  }
+
+  @include desktop {
+    width: 285px;
+    height: 285px;
+  }
+}

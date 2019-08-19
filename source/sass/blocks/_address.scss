@@ -1,3 +1,11 @@
 .address {
   @include wrapper;
+
+  background-color: #ffd74b;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 -25px 0 0 #ffd74b;
+}
+
+.address__button {
+  border: 3px solid #192144;
 }

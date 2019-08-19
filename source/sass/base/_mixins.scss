@@ -1,9 +1,13 @@
 @mixin wrapper {
   padding: 27px 25px;
+
+  @include tablet {
+    padding: 27px 75px;
+  }
 }
 
 @mixin tablet {
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
@@ -13,3 +17,6 @@
     @content;
   }
 }
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -2,11 +2,14 @@
   @include wrapper;
 
   position: relative;
+  z-index: 2;
 
   color: #ffffff;
 
   background-color: #121b42;
   background-image: url("/img");
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 -25px 0 0 #121b42;
 
   @include desktop {
     display: flex;

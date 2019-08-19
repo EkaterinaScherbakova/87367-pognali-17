@@ -1,16 +1,66 @@
 .tariff-list {
-  width: 90%;
-  margin: 0 auto;
+  width: 200px;
+  margin-left: 25px;
   border-collapse: collapse;
+
+  & tbody {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .tariff-list__conditions {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
   border-top: 1px solid #e2e4ea;
-  border-bottom: 1px solid #e2e4ea;
+
+  &::after {
+    content: "1";
+
+    position: absolute;
+    top: 2px;
+    right: -43px;
+
+    width: 34px;
+    height: 34px;
+    padding: 6px 0;
+
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+
+  &:nth-child(2)::after {
+    content: "2";
+
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(3)::after {
+    content: "3";
+
+    background-color: #ffd74b;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #e2e4ea;
+  }
 }
 
 .tariff-list__price {
-  text-align: right;
+  padding-bottom: 14px;
+
+  text-align: left;
+}
+
+.tariff-list__service {
+  padding-top: 14px;
 }
 
 .tariff-list__service,

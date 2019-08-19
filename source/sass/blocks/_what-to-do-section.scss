@@ -2,10 +2,15 @@
   @include wrapper;
 
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 39px;
+
+  background-color: #121b42;
+  background-image: linear-gradient(#0e1532 82px, #121b42 82px);
 
   @include tablet {
     height: 111px;
+
+    background-image: none;
   }
 
   @include desktop {

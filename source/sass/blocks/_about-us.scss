@@ -1,33 +1,38 @@
 .about-us {
   @include wrapper;
 
+  position: relative;
+  z-index: 4;
+
   min-height: 352px;
 
   color: #ffffff;
 
   background-color: #273052;
-  background-image: url("/img/about-mobile@1x.png");
+  background-image: url("../img/about-mobile@1x.png");
   background-position: center top;
   background-repeat: no-repeat;
+  border-radius: 0 0 25px 25px;
 
   @include tablet {
     min-height: 684px;
-    background-image: url("/img/about-tablet@1x.png");
+    background-color: #121b42;
+    background-image: url("../img/about-tablet@1x.png");
     background-position: right 48px;
   }
 
   @include desktop {
     min-height: 750px;
-    background-image: url("/img/about-desktop@1x.png");
+    background-image: url("../img/about-desktop@1x.png");
     background-position: 95% 85px;
   }
 }
 
 .about-us__wrapper {
-  margin-left: 5%;
+  // margin-left: 5%;
 
   @include tablet {
-    width: 40%;
+    width: 55%;
   }
 }
 

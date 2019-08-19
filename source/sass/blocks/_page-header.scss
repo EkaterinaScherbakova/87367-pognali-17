@@ -42,6 +42,21 @@
   }
 }
 
+.page-header__logo img {
+  width: 100px;
+  height: 19px;
+
+  @include tablet {
+    width: 166px;
+    height: 42px;
+  }
+
+  @include desktop {
+    width: 200px;
+    height: 52px;
+  }
+}
+
 .page-header__nav-toggle {
   position: relative;
 
